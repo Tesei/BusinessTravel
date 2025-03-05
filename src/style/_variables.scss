@@ -1,0 +1,97 @@
+// Font
+$font-family-main:"Open Sans";
+$enable-smooth-scroll: false;
+$fontSize: 62.5%;
+
+// Границы адаптива ============================================
+$minWidth: 320px; // Указываем минимальный размер экрана
+$maxWidth: 1920; // Указываем размер полотна
+$maxWidthContainer: 1170; // Указываем размер ограничивающего контейнера
+
+$md1: $maxWidthContainer + 12;
+$md2: 1023.98; // ниже начинаются планшеты
+$md3: 767.98; // ниже начинаются мобилки
+$md4: 520;
+
+//<ОСНОВНАЯ СЕТКА>==========================================
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	@media (max-width: $md1+'px') {
+		max-width: 1140px;
+		padding: 0 1rem;
+	}
+	@media (max-width: $md2+'px') {
+		max-width: 750px;
+	}
+	@media (max-width: $md3+'px') {
+		max-width: 520px;
+	}
+}
+//</ОСНОВНАЯ СЕТКА>======================================
+/*
+ * Color system
+ * ---------------------------------------------
+ */
+$color-white: #ffffff;
+$color-red: #E73C3E;
+$color-red-2: #FDECEC;
+$color-orange: #FFCD00;
+$color-orange-2: #FFFCE6;
+$color-turquoise: #49C8C0;
+$color-turquoise-2: #EDFAF9;
+$color-cornflower: #4872F2;
+$color-cornflower-2: #3965EE;
+$color-cornflower-3: #2857E8;
+$color-green: #28BF68;
+$color-green-2: #2A524E;
+$color-yellow: #FFE100;
+$color-yellow-2: #FFB800;
+$color-black:#2E2E32;
+$color-blue-2: #EDF1FE;
+$color-gold: #CC9A46;
+
+$color-gray: #7E8389;
+$color-gray-2: #B3B9C0;
+$color-gray-3: #DBE0E5;
+$color-gray-4: #E9EAEC;
+$color-gray-5: #EFF2F6;
+$color-gray-6: #F6F8FA;
+$color-gray-9: #D4D9DE;
+
+$bg-rainbow: linear-gradient(94.41deg, #EDFAF9 0%, #FFFCE6 34.38%, #FDECEC 68.23%, #EDF1FE 100%);
+$bg-base: #1F1F1F;
+$text-disabled: #B5B8BC;
+$loading-gradient: linear-gradient(90deg, #FBFBFB 0%, rgba(229, 232, 236, 0) 100%);
+
+// Corner radius
+
+
+$border-radius-2: 2px;
+$border-radius-4: 4px;
+$border-radius-6: 6px;
+$border-radius-8: 8px;
+$border-radius-10: 10px;
+$border-radius-12: 12px;
+$border-radius-16: 16px;
+$border-radius-24: 24px;
+$border-radius-100: 100px;
+
+// Цвета теней
+
+$shadow-pale: 0px 20px 20px 0px #757A8814,
+			 0px 5px 5px 0px #757A880F;
+$shadow-middle: 0px 20px 20px 0px #757A8814,
+				0px 10px 8px 0px #757A8814;
+$shadow-bright: 0px 10px 10px 0px #757A8817,
+				0px 14px 14px 0px #757A8817;
+$shadow-header: 0px 6px 6px 0px #757A881A;
+
+
+// Shadows
+
+$shadow-2dp: 0px 6px 6px 0px #757A881A;
+$shadow-5dp: 0px 20px 20px 0px #757A8814, 0px 5px 5px 0px #757A880F;
+$shadow-10dp: 0px 20px 20px 0px #757A8814, 0px 10px 8px 0px #757A8814;
+$shadow-20dp: 0px 10px 10px 0px #757A8817, 0px 14px 14px 0px #757A8817;
+$shadow-8left: -4px -2px 20px 0px #757A8814, 8px 0px 8px 0px #757A8814;

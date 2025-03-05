@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BaseButton component > mounts without error 1`] = `"<button data-v-170f5cbe="" class="button font-button_M jc-c test-class" type="submit">Окно ввода</button>"`;
+
+exports[`Button component > mounts without error 1`] = `"<button data-v-170f5cbe="" class="button font-button_M jc-c test-class" type="submit">Окно ввода</button>"`;

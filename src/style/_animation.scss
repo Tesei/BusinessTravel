@@ -1,0 +1,122 @@
+/* базоваяанимация */
+/* ============== */
+/* 1. объявление transition */
+.fade-move,
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.5s ease;
+}
+
+/* 2. объявление enter from и leave to состояний */
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.list-move, /* применять переход к движущимся элементам */
+.list-enter-active,
+.list-leave-active {
+    transition: all 2s ease;
+}
+
+// todo доработать скрытие окна списка
+.list-enter-from,
+.list-leave-to {
+    opacity: 0;
+    transform: translateX(60px);
+}
+
+/* убедитесь, что удаляющиеся элементы выведены из потока, чтобы
+анимации перемещения могли быть рассчитаны правильно. */
+.list-leave-active {
+    //   position: absolute;
+}
+
+/* 3. анимация вложенных элементов формы */
+
+.nested-enter-active,
+.nested-leave-active {
+    transition: all 0.5s ease-in-out;
+}
+.nested-leave-active {
+    transition-delay: 0.25s;
+}
+
+.nested-enter-from,
+.nested-leave-to {
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.nested-enter-active .inner,
+.nested-leave-active .inner {
+    transition: all 0.5s ease-in-out;
+}
+.nested-enter-active .inner {
+    transition-delay: 0.25s;
+}
+
+.nested-enter-from .inner,
+.nested-leave-to .inner {
+    transform: translateX(30px);
+    opacity: 0.001;
+}
+
+.nested-list-enter-active,
+.nested-list-leave-active {
+    transition: all 0.5s ease;
+}
+.nested-list-enter-from,
+.nested-list-leave-to {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+// Анимация иконки при наведении
+.icon-animation:hover {
+    svg {
+        animation-name: balance; // Название анимации
+        animation-duration: 1s;
+        animation-timing-function: linear; // Задаёт сценарий развития анимации между ключевыми кадрами.
+        animation-iteration-count: 2; // Отвечает за повтор проигрывания ключевых кадров.
+        animation-direction: alternate; // Определяет направление и тип проигрывания ключевых кадров.
+        animation-delay: 0.2s;
+    }
+}
+
+@keyframes balance {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(32deg);
+    }
+    100% {
+        transform: rotate(-32deg);
+    }
+}
+
+// Анимация открытия модального окна
+.modal-enter-from {
+    opacity: 0;
+}
+
+.modal-leave-to {
+    opacity: 0;
+}
+
+.modal-enter-from .modal-container,
+.modal-leave-to .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+//===============================================================

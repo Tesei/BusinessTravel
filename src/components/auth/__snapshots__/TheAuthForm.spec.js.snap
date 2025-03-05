@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TheAuthForm component > mounts without error 1`] = `
+"<div data-v-5f48b7ce="">
+  <div data-v-400d8eb7="" data-v-5f48b7ce="" class="auth">
+    <div data-v-400d8eb7="" class="ui-login__wrapper">
+      <div data-v-400d8eb7="" class="bd radius-16 p-24 bg-white bd-gray-9 ui-login__content">
+        <div data-v-400d8eb7="" class="ui-login__header ui-login__content_header">
+          <h3 data-v-5f48b7ce="" class="Heading_3 block mb-24 auth__title">Авторизация</h3>
+        </div>
+        <div data-v-400d8eb7="" class="ui-login__body">
+          <form data-v-5f48b7ce="" class="auth__inputs-block">
+            <div data-v-2b79102b="" data-v-5f48b7ce="" class="input input-default input-container body_S mb-24 auth__input-login">
+              <div data-v-2b79102b="" class="input__wrapper">
+                <div data-v-2b79102b="" class="input__wrapper"><input data-v-2b79102b="" class="body_S input__field" type="text"><label data-v-2b79102b="" class="body_S input__placeholder required">Логин</label></div>
+                <!--v-if-->
+              </div>
+            </div>
+            <div data-v-b93d3001="" data-v-5f48b7ce="" class="input input-default body_S mb-24 auth__input-password">
+              <div data-v-b93d3001="" class="input__wrapper"><input data-v-b93d3001="" class="body_S input__field" type="password"><label data-v-b93d3001="" class="body_S input__placeholder required">Пароль</label><svg data-v-b93d3001="" class="icon-sprite input__svg input__svg-eye">
+                  <use xlink:href="/assets/icons/sprite.svg#common--eye-hide"></use>
+                </svg></div>
+              <!--v-if-->
+            </div><a data-v-5f48b7ce="" href="/restore-password" class="body_S mb-24 c-gray auth__forgot-password">Забыли пароль? </a><button data-v-170f5cbe="" data-v-5f48b7ce="" class="button font-button_M jc-c font-button_M button button_blue jc-c auth__btn" disabled="" type="submit" iconname="common--delete"> Войти </button>
+          </form>
+        </div>
+        <!--v-if-->
+        <div data-v-400d8eb7="" class="ui-login__footer"></div>
+      </div>
+    </div>
+  </div>
+</div>"
+`;

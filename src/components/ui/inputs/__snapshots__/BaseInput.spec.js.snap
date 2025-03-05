@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BaseInput component > mounts without error 1`] = `
+"<div data-v-2b79102b="" class="input input-error input-container">
+  <div data-v-2b79102b="" class="input__wrapper">
+    <div data-v-2b79102b="" class="input__wrapper"><input data-v-2b79102b="" class="body_S input__field" type="text" maxlength="10"><label data-v-2b79102b="" class="body_S input__placeholder required">Введите текст</label></div><span data-v-2b79102b="" class="footnote_12 input__error-text">Error Message</span>
+  </div>
+</div>"
+`;
